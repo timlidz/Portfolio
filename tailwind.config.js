@@ -15,12 +15,10 @@ module.exports = {
        fontFamily: {
          sans: ['Raleway', 'sans-serif'],
          opensans: ['Open Sans', 'sans-serif'],
+         itim: ['Itim', 'cursive'],
+         poetsen: ['Poetsen One', 'sans-serif']
        },
-       backgroundImage: (theme) => ({
-         'logo-dark-mode': "url('')",
-         'logo-light-mode': "url('')",
-         'curvy-dark-mode': "url('')",
-         'curvy-light-mode': "url('')",
+       backgroundImage: (theme) => ({         
        }),
      },
    },

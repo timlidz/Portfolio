@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Itim&family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="images/ico.svg" />
     <script>
        // https://www.freecodecamp.org/news/how-to-build-a-dark-mode-switcher-with-tailwind-css-and-flowbite
        if (
@@ -30,7 +34,8 @@
    <!-- Header  -->
    <header class="container mx-auto mt-10 px-6 text-center h-40 md:h-20">
       <!-- Dynamic logo  -->
-      <div class="bg-logo-light-mode dark:bg-logo-dark-mode bg-no-repeat h-20 w-48 mx-auto md:mx-0 md:absolute top-10 left-10"></div>
+      <!-- <div class="bg-logo-light-mode dark:bg-logo-dark-mode bg-no-repeat h-20 w-48 mx-auto md:mx-0 md:absolute top-10 left-10"></div> -->
+      <div class="text-black dark:text-white bg-no-repeat h-20 w-48 mx-auto md:mx-0 md:absolute top-10 left-10 font-itim text-4xl">Timo S.</div>
       <!-- Menu  -->
       <div class="flex items-center justify-center space-x-4 md:space-x-10 md:absolute top-12 right-10">
          <a href="#projects" class="hover:text-accentCyan">Projects</a>
@@ -74,31 +79,41 @@
    <!-- About Me Section  -->
    <section id="hero" class="bg-curvy-light-mode dark:bg-curvy-dark-mode bg-no-repeat bg-contain bg-bottom">
       <!-- Hero container  -->
-      <div class="container mx-auto px-6 text-center md:pt-20 pb-52">
-         <!-- Profile Photo  -->
-         <img src="" alt="" class="mx-auto">
-         <h1 class="max-w-2xl mx-auto mb-10 text-3xl font-bold leading-normal mt-14 md:text-4xl">
-            Lorem ipsum dolor sit amet.
-         </h1>
-         <p class="max-w-sm mx-auto mb-10 text-sm md:max-w-xl md:text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni porro inventore adipisci illo consequuntur culpa? Eaque optio consequuntur, natus earum atque magnam minima, ipsam ducimus totam pariatur cupiditate explicabo velit vero. Quis obcaecati consectetur, id inventore vitae ea repellendus! Commodi.
-         </p>
+      <div class="container mx-auto px-6 text-center flex">
+         <div> 
+            <img src="" alt="" class="mx-auto">
+            <h1 class="max-w-2xl mx-auto mb-10 text-3xl font-bold leading-normal mt-14 md:text-4xl">
+               Lorem ipsum dolor sit amet.
+            </h1>
+            <p class="max-w-sm mx-auto mb-10 text-sm md:max-w-xl md:text-lg">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni porro inventore adipisci illo consequuntur culpa? Eaque optio consequuntur, natus earum atque magnam minima, ipsam ducimus totam pariatur cupiditate explicabo velit vero. Quis obcaecati consectetur, id inventore vitae ea repellendus! Commodi.
+            </p>
+         </div>
+         <div class="">
+            <img src="images/image3.png" alt="" class="w-96">
+         </div>
       </div>
    </section>
 
    <!-- Projects section  -->
    <section id="projects" class="pt-12 bg-gray-50 dark:bg-darkBlue1">
       <!-- Features container  -->
-      <div class="container mx-auto px-6 pb-32">
-         <!-- First row  -->
-         <div class="flex flex-col space-y-24 text-center md:flex-row md:space-y-0">
+      <div class="container mx-auto px-10 pb-32 lg:px-20 xl:px-40">
+         <h2 class="text-center text-2xl mb-8">Projects:</h2>
+         <div class="flex flex-col text-center md:flex-row gap-10 md:gap-20 lg:gap-30 xl:gap-40">
             <!-- Item 1  -->
-            <div class="flex flex-col items-center space-y-2 md:w-1/2">
-              
+            <div class="relative launch" >
+               <img src="images/project1.png" alt="">
+               <div class="absolute flex justify-center items-center top-0 left-0 w-full h-full bg-slate-900 opacity-0 transition-all hover:opacity-70">
+                  <a href="#" class="border border-white py-1 px-3 text-white">Launch</a>
+               </div>
             </div>
             <!-- Item 2  -->
-            <div class="flex flex-col items-center space-y-2 md:w-1/2">
-               
+            <div class="relative launch">
+               <img src="images/project2.png" alt="">
+               <div class="absolute flex justify-center items-center top-0 left-0 w-full h-full bg-slate-900 opacity-0 transition-all hover:opacity-70">
+                  <a href="#" class="border border-white py-1 px-3 text-white">Launch</a>
+               </div>
             </div>
          </div>
 
@@ -106,23 +121,23 @@
    </section>
 
    <!-- Socials/contact ME Section  -->
-   <section id="contactme" class="bg-white dark:bg-darkBlue">
-      <!-- productive container  -->
+   <!-- <section id="contactme" class="bg-white dark:bg-darkBlue">
+     
       <div class="container flex flex-col items-center mx-auto px-6 pt-24 pb-32 md:flex-row md:space-x-16">
-         <!-- image  -->
+         
       
       </div>
-   </section>
+   </section> -->
 
-
+<!-- 
    <footer class="bg-darkBlue2 text-white">
       <div class="container mx-auto px-5 pb-10 pt-12">
-         <!-- flex container for all items -->
+         
          <div class="flex">
 
          </div>
       </div>
-   </footer>
+   </footer> -->
 
 </body>
 </html>
