@@ -77,20 +77,22 @@
 
 
    <!-- About Me Section  -->
-   <section id="hero" class="bg-curvy-light-mode dark:bg-curvy-dark-mode bg-no-repeat bg-contain bg-bottom">
+   <section id="hero" class="">
       <!-- Hero container  -->
-      <div class="container mx-auto px-6 text-center flex">
-         <div> 
+      <div class="container mx-auto px-6 text-center flex flex-col-reverse justify-center items-center md:flex-row space-x-10 lg:space-x-32">
+         <div class="w-full md:w-3/5 lg:w-3/5"> 
             <img src="" alt="" class="mx-auto">
             <h1 class="max-w-2xl mx-auto mb-10 text-3xl font-bold leading-normal mt-14 md:text-4xl">
-               Lorem ipsum dolor sit amet.
+               Hi, I am Timo 
+               <img id="star" class="h-14 inline-block ml-4 transition-all hover:animate-ping" src="images/star.png" alt="">
+               <img id="flower" class="hidden h-14 ml-4 transition-all hover:animate-spin" src="images/flower.png" alt="">
             </h1>
-            <p class="max-w-sm mx-auto mb-10 text-sm md:max-w-xl md:text-lg">
+            <p class="max-w-sm mx-auto mb-10 text-sm md:max-w-xl md:text-lg text-center md:text-left">
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni porro inventore adipisci illo consequuntur culpa? Eaque optio consequuntur, natus earum atque magnam minima, ipsam ducimus totam pariatur cupiditate explicabo velit vero. Quis obcaecati consectetur, id inventore vitae ea repellendus! Commodi.
             </p>
          </div>
-         <div class="">
-            <img src="images/image3.png" alt="" class="w-96">
+         <!-- Image  -->
+         <div class="bg-[url('../images/photo2.jpg')] dark:bg-[url('../images/photo1.jpg')] w-52 h-52 lg:w-80 lg:h-80 bg-cover bg-center rounded-full">
          </div>
       </div>
    </section>
@@ -98,19 +100,19 @@
    <!-- Projects section  -->
    <section id="projects" class="pt-12 bg-gray-50 dark:bg-darkBlue1">
       <!-- Features container  -->
-      <div class="container mx-auto px-10 pb-32 lg:px-20 xl:px-40">
+      <div class="container mx-auto w-4/5 lg:w-full xl:w-4/5 px-10 pb-32 lg:px-20 xl:px-40">
          <h2 class="text-center text-2xl mb-8">Projects:</h2>
-         <div class="flex flex-col text-center md:flex-row gap-10 md:gap-20 lg:gap-30 xl:gap-40">
+         <div class="flex flex-col text-center md:flex-row space-y-10 md:space-y-0 justify-between space-x-10 lg:space-x-16">
             <!-- Item 1  -->
             <div class="relative launch" >
-               <img src="images/project1.png" alt="">
+               <img src="images/project1.png" alt="" class="filter dark:grayscale-[50%]">
                <div class="absolute flex justify-center items-center top-0 left-0 w-full h-full bg-slate-900 opacity-0 transition-all hover:opacity-70">
                   <a href="#" class="border border-white py-1 px-3 text-white">Launch</a>
                </div>
             </div>
             <!-- Item 2  -->
             <div class="relative launch">
-               <img src="images/project2.png" alt="">
+               <img src="images/project2.png" alt="" class="filter dark:grayscale-[50%]">
                <div class="absolute flex justify-center items-center top-0 left-0 w-full h-full bg-slate-900 opacity-0 transition-all hover:opacity-70">
                   <a href="#" class="border border-white py-1 px-3 text-white">Launch</a>
                </div>
