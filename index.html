@@ -32,48 +32,49 @@
 </head>
 <body class="dark:bg-darkBlue dark:text-white font-opensans">
    <!-- Header  -->
-   <header class="container mx-auto mt-10 px-6 text-center h-40 md:h-20">
-      <!-- Dynamic logo  -->
-      <!-- <div class="bg-logo-light-mode dark:bg-logo-dark-mode bg-no-repeat h-20 w-48 mx-auto md:mx-0 md:absolute top-10 left-10"></div> -->
-      <div class="text-black dark:text-white bg-no-repeat h-20 w-48 mx-auto md:mx-0 md:absolute top-10 left-10 font-itim text-4xl">Timo S.</div>
-      <!-- Menu  -->
-      <div class="flex items-center justify-center space-x-4 md:space-x-10 md:absolute top-12 right-10">
-         <a href="#projects" class="hover:text-accentCyan">Projects</a>
-         <a href="#contactme" class="hover:text-accentCyan">Contact Me</a>
+   <header class="w-full bg-gray-50 dark:bg-darkBlue1">
+      <div class="container mx-auto pb-5 py-5 px-6 text-center h-40 md:h-24 ">
+         <!-- Dynamic logo  -->
+         <!-- <div class="bg-logo-light-mode dark:bg-logo-dark-mode bg-no-repeat h-20 w-48 mx-auto md:mx-0 md:absolute top-10 left-10"></div> -->
+         <div class="text-black dark:text-white bg-no-repeat h-20 w-48 mx-auto md:mx-0 md:absolute top-10 left-10 font-itim text-3xl">Timo S.</div>
+         <!-- Menu  -->
+         <div class="flex items-center justify-center space-x-4 md:space-x-10 md:absolute top-12 right-10">
+            <a href="#projects" class="hover:text-accentCyan">Projects</a>
+            <a href="#contactme" class="hover:text-accentCyan">Contact Me</a>
 
-         <!-- Dark/ Light mode switch Button -->
-         <button id="theme-toggle" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:ring-gray-700 rounded-lg text-sm p-2,5">
-            <!-- Dark SVG Icon -->
-          <svg
-          id="theme-toggle-dark-icon"
-          class="w-5 h-5 hidden"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-          ></path>
-        </svg>
-        <!-- Light SVG Icon -->
-        <svg
-          id="theme-toggle-light-icon"
-          class="w-5 h-5 hidden"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-         </button>
+            <!-- Dark/ Light mode switch Button -->
+            <button id="theme-toggle" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:ring-gray-700 rounded-lg text-sm p-2,5">
+               <!-- Dark SVG Icon -->
+            <svg
+            id="theme-toggle-dark-icon"
+            class="w-5 h-5 hidden"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+         >
+            <path
+               d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+            ></path>
+         </svg>
+         <!-- Light SVG Icon -->
+         <svg
+            id="theme-toggle-light-icon"
+            class="w-5 h-5 hidden"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+         >
+            <path
+               d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+               fill-rule="evenodd"
+               clip-rule="evenodd"
+            ></path>
+         </svg>
+            </button>
 
+         </div>
       </div>
    </header>
-
 
 
    <!-- About Me Section  -->
@@ -84,15 +85,15 @@
             <img src="" alt="" class="mx-auto">
             <h1 class="max-w-2xl mx-auto mb-10 text-3xl font-bold leading-normal mt-14 md:text-4xl">
                Hi, I am Timo 
-               <img id="star" class="h-14 inline-block ml-4 transition-all hover:animate-ping" src="images/star.png" alt="">
-               <img id="flower" class="hidden h-14 ml-4 transition-all hover:animate-spin" src="images/flower.png" alt="">
+               <img id="star" class="h-14 hidden inline-block ml-4 transition-all hover:animate-ping" src="images/star.png" alt="">
+               <img id="flower" class="hidden inline-block h-14 ml-4 transition-all hover:animate-spin" src="images/flower.png" alt="">
             </h1>
             <p class="max-w-sm mx-auto mb-10 text-sm md:max-w-xl md:text-lg text-center md:text-left">
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni porro inventore adipisci illo consequuntur culpa? Eaque optio consequuntur, natus earum atque magnam minima, ipsam ducimus totam pariatur cupiditate explicabo velit vero. Quis obcaecati consectetur, id inventore vitae ea repellendus! Commodi.
             </p>
          </div>
          <!-- Image  -->
-         <div class="bg-[url('../images/photo2.jpg')] dark:bg-[url('../images/photo1.jpg')] w-52 h-52 lg:w-80 lg:h-80 bg-cover bg-center rounded-full">
+         <div class="bg-[url('../images/photo.jpg')] dark:bg-[url('../images/photo-bw.jpg')] w-52 h-52 lg:w-80 lg:h-80 bg-cover bg-center rounded-full my-10">
          </div>
       </div>
    </section>
@@ -123,23 +124,41 @@
    </section>
 
    <!-- Socials/contact ME Section  -->
-   <!-- <section id="contactme" class="bg-white dark:bg-darkBlue">
-     
-      <div class="container flex flex-col items-center mx-auto px-6 pt-24 pb-32 md:flex-row md:space-x-16">
-         
-      
-      </div>
-   </section> -->
+   <section id="contactme" class="bg-white dark:bg-darkBlue">
+      <div class="container mx-auto px-20">
+         <div class="flex flex-col sm:flex-row justify-center items-center space-x-10 space-y-16 pt-16 pb-16">
+            <div class="flex w-1/2 flex-col space-y-16 justify-center items-center">
+               <a href="http://www.linkedin.com/in/timosi" target="_blank" class="border-2 border-accentCyan px-4 py-2 text-center rounded-lg bg-gray-50 w-56 hover:bg-gray-100 text-xl dark:text-white dark:bg-darkBlue1 dark:hover:bg-darkBlue3">Linked-In</a>
+               <a href="https://github.com/timosi-dev" target="_blank" class="border-2 border-accentCyan px-4 py-2 text-center rounded-lg bg-gray-50 w-56 hover:bg-gray-100 text-xl dark:text-white dark:bg-darkBlue1 dark:hover:bg-darkBlue3">GitHub</a>
+            </div>
 
-<!-- 
-   <footer class="bg-darkBlue2 text-white">
-      <div class="container mx-auto px-5 pb-10 pt-12">
-         
-         <div class="flex">
+            <div class="flex w-1/2 flex-col space-y-16 justify-center items-center">
+               <div class="">
+                  <p>Email:
+                     <span>timo23075@gmail.com</span>
+                  </p>
+               </div>
+               <div>
+                  <p>Resume:</p>
 
+               </div>
+            </div>
+            
+         
          </div>
       </div>
-   </footer> -->
+   </section>
+
+
+
+   <footer class="bg-gray-50 dark:bg-darkBlue1 text-white">
+      <div class=" container mx-auto px-6 pt-7 text-center h-24">
+         
+         <div class="flex justify-center md:justify-between items-center">
+            <div class="text-gray-400 dark:text-gray-500 font-itim font-normal text-2xl">Timo Sikharulidze</div>
+            
+      </div>
+   </footer>
 
 </body>
 </html>

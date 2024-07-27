@@ -11,8 +11,10 @@ if (
 ) {
    //show light icon
    themeToggleLightIcon.classList.remove('hidden')
+   star.classList.remove('hidden')
 } else {
    themeToggleDarkIcon.classList.remove('hidden')
+   flower.classList.remove('hidden')
 }
 
 function themeChange() {
