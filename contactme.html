@@ -15,7 +15,6 @@
    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="icon" type="image/svg+xml" href="images/ico.svg" />
     <script>
-       // https://www.freecodecamp.org/news/how-to-build-a-dark-mode-switcher-with-tailwind-css-and-flowbite
        if (
           localStorage.getItem('color-theme') === 'dark' ||
           (!('color-theme' in localStorage) &&
@@ -26,22 +25,24 @@
             document.documentElement.classList.remove('dark')
          }
    </script>
-
+   <script src="https://kit.fontawesome.com/72b4c1a072.js" crossorigin="anonymous"></script>
    <script src="./js/script.js" defer></script>
    <link rel="stylesheet" href="css/style.css">
    <title>Tim Lidz</title>
+
 </head>
 <body class="dark:bg-darkBlue dark:text-white font-opensans">
    <!-- Header  -->
-   <header class="w-full bg-gray-50 dark:bg-darkBlue1 fixed top-0 right-0 left-0">
+   <header class="w-full bg-gray-50 dark:bg-darkBlue1 fixed top-0 right-0 left-0 z-10">
       <div class="container mx-auto pb-5 py-5 px-6 text-center h-36 md:h-24 ">
          <!-- Dynamic logo  -->
          <!-- <div class="bg-logo-light-mode dark:bg-logo-dark-mode bg-no-repeat h-20 w-48 mx-auto md:mx-0 md:absolute top-10 left-10"></div> -->
-         <div class="text-black dark:text-white bg-no-repeat h-20 w-48 mx-auto md:mx-0 md:absolute top-10 left-10 font-itim text-3xl">Tim Lidz</div>
+         <div class="text-black dark:text-white bg-no-repeat h-20 w-48 mx-auto md:mx-0 md:absolute top-10 left-10 font-itim text-3xl"><a href="index.html">Tim Lidz</a></div>
          <!-- Menu  -->
          <div class="flex items-center justify-center space-x-4 md:space-x-10 md:absolute top-12 right-10">
-            <a href="#projects" class="hover:text-accentCyan">Projects</a>
-            <a href="#contactme" class="hover:text-accentCyan">Contact Me</a>
+            <a href="index.html" class="hover:text-accentCyan">About Me</a>
+            <a href="vfx.html" class="hover:text-accentCyan">VFX</a>
+            <a href="contactme.html" class="hover:text-accentCyan">Contact Me</a>
 
             <!-- Dark/ Light mode switch Button -->
             <button id="theme-toggle" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:ring-gray-700 rounded-lg text-sm p-2,5">
@@ -112,11 +113,20 @@
 
 
    <footer class="bg-gray-50 dark:bg-darkBlue1 text-white">
-      <div class=" container mx-auto px-6 pt-7 text-center h-24">
+      <div class=" container mx-auto px-20  text-center h-24 flex flex-row justify-between ">
          
          <div class="flex justify-center md:justify-between items-center">
             <div class="text-gray-400 dark:text-gray-500 font-itim font-normal text-2xl">Tim Lidz</div>
+         </div>
+
+         <div class="flex justify-center md:justify-between items-center gap-3">
+            <a href="https://www.linkedin.com/in/timlidz/" target="_blank"><i class="fa-brands fa-linkedin text-darkBlue1 dark:text-gray-200 fa-xl hover:text-accentCyan dark:hover:text-accentCyan"></i></a>
+
+            <a href="https://github.com/timlidz" target="_blank"><i class="fa-brands fa-github text-darkBlue1 dark:text-gray-200 fa-xl hover:text-accentCyan dark:hover:text-accentCyan"></i></a>
             
+            <a href='mailto&#58;ti&#37;&#54;Dm&#46;lidz&#64;gmail&#46;c&#111;&#37;6D' target="_blank"><i class="fa-regular fa-envelope text-darkBlue1 dark:text-gray-200 fa-xl hover:text-accentCyan dark:hover:text-accentCyan"></i></a>
+
+         </div>
       </div>
    </footer>
 
