@@ -12,9 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Poetsen+One&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="icon" type="image/svg+xml" href="images/ico.svg" />
     <script>
-       // https://www.freecodecamp.org/news/how-to-build-a-dark-mode-switcher-with-tailwind-css-and-flowbite
        if (
           localStorage.getItem('color-theme') === 'dark' ||
           (!('color-theme' in localStorage) &&
@@ -25,22 +25,24 @@
             document.documentElement.classList.remove('dark')
          }
    </script>
-
+   <script src="https://kit.fontawesome.com/72b4c1a072.js" crossorigin="anonymous"></script>
    <script src="./js/script.js" defer></script>
    <link rel="stylesheet" href="css/style.css">
-   <title>Timo S</title>
+   <title>Tim Lidz</title>
+
 </head>
 <body class="dark:bg-darkBlue dark:text-white font-opensans">
    <!-- Header  -->
-   <header class="w-full bg-gray-50 dark:bg-darkBlue1">
-      <div class="container mx-auto pb-5 py-5 px-6 text-center h-40 md:h-24 ">
+   <header class="w-full bg-gray-50 dark:bg-darkBlue1 fixed top-0 right-0 left-0 z-10">
+      <div class="container mx-auto pb-5 py-5 px-6 text-center h-36 md:h-24 ">
          <!-- Dynamic logo  -->
          <!-- <div class="bg-logo-light-mode dark:bg-logo-dark-mode bg-no-repeat h-20 w-48 mx-auto md:mx-0 md:absolute top-10 left-10"></div> -->
-         <div class="text-black dark:text-white bg-no-repeat h-20 w-48 mx-auto md:mx-0 md:absolute top-10 left-10 font-itim text-3xl">Timo S.</div>
+         <div class="text-black dark:text-white bg-no-repeat h-20 w-48 mx-auto md:mx-0 md:absolute top-10 left-10 font-itim text-3xl"><a href="index.html">Tim Lidz</a></div>
          <!-- Menu  -->
          <div class="flex items-center justify-center space-x-4 md:space-x-10 md:absolute top-12 right-10">
-            <a href="#projects" class="hover:text-accentCyan">Projects</a>
-            <a href="#contactme" class="hover:text-accentCyan">Contact Me</a>
+            <a href="index.html" class="hover:text-accentCyan">About Me</a>
+            <a href="vfx.html" class="hover:text-accentCyan">VFX</a>
+            <a href="contactme.html" class="hover:text-accentCyan">Contact Me</a>
 
             <!-- Dark/ Light mode switch Button -->
             <button id="theme-toggle" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:ring-gray-700 rounded-lg text-sm p-2,5">
@@ -80,22 +82,21 @@
    <!-- About Me Section  -->
    <section id="hero" class="">
       <!-- Hero container  -->
-      <div class="container mx-auto px-6 text-center flex flex-col-reverse justify-center items-center md:flex-row space-x-10 lg:space-x-32">
-         <div class="w-full md:w-3/5 lg:w-3/5"> 
-            <img src="" alt="" class="mx-auto">
-            <h1 class="max-w-2xl mx-auto mb-10 text-3xl font-bold leading-normal mt-14 md:text-4xl">
-               Hi, I am Timo 
+      <div class="container mx-auto px-6 text-center flex flex-col-reverse justify-center items-center pt-36 md:pt-24 md:flex-row space-x-8 lg:space-x-32">
+         <div class="w-full mt-0 pt-0 md:w-3/5 lg:w-3/5"> 
+            <!-- <img src="" alt="" class="mx-auto"> -->
+            <h1 class="max-w-2xl mx-auto mb-10 text-3xl font-bold leading-normal mt-3 md:mt-14 md:text-4xl">
+               Hi, I am Tim
                <img id="star" class="h-14 hidden inline-block ml-4 transition-all hover:animate-ping" src="images/star.png" alt="">
                <img id="flower" class="hidden inline-block h-14 ml-4 transition-all hover:animate-spin" src="images/flower.png" alt="">
             </h1>
             <p class="max-w-sm mx-auto mb-10 text-sm md:max-w-xl md:text-lg text-center md:text-center">
-               <span class="text-lg md:text-xl">Aspiring web developer </span><br>
-               Bringing a strong foundation in visual arts and a keen eye for design, I'm eager
-               to transition my skills to the world of web development.
+               <span class="text-lg md:text-xl"> Frontend (full-stack) web developer </span><br><br>
+               Based in Munich, Germany. Bringing a strong foundation in visual arts and a keen eye for design, love solving real-world problems and creating solutions that are delightful to use.
             </p>
          </div>
          <!-- Image  -->
-         <div class="bg-[url('../images/photo.jpg')] dark:bg-[url('../images/photo-bw.jpg')] w-52 h-52 lg:w-80 lg:h-80 bg-cover bg-center rounded-full my-10">
+         <div class="bg-[url('../images/photo2.jpg')] dark:bg-[url('../images/photo2-bw.jpg')] w-52 h-52 lg:w-80 lg:h-80 bg-cover bg-center rounded-full my-10">
          </div>
       </div>
    </section>
@@ -104,23 +105,115 @@
    <section id="projects" class="pt-12 bg-gray-50 dark:bg-darkBlue1">
       <!-- Features container  -->
       <div class="container mx-auto w-4/5 lg:w-full xl:w-4/5 px-10 pb-32 lg:px-20 xl:px-40">
-         <h2 class="text-center text-2xl mb-8">Projects:</h2>
-         <div class="flex flex-col text-center md:flex-row space-y-10 md:space-y-0 justify-between  md:space-x-16">
+         <h2 class="text-center text-2xl mb-4">My Projects:</h2>
+         <hr class="mb-8 border-b-2 w-24 mx-auto border-slate-600">
+         <div class="flex flex-col justify-center text-center gap-10">
+<!--  space-y-10 md:space-y-0 md:space-x-16 -->
             <!-- Item 1  -->
-            <div class="relative launch" >
-               <img src="images/project1.png" alt="" class="filter dark:grayscale-[50%]">
-               <div class="absolute flex justify-center items-center top-0 left-0 w-full h-full bg-slate-900 opacity-0 transition-all hover:opacity-70">
-                  <a href="https://entertain-me-website.netlify.app/" class="border border-white py-1 px-3 text-white" target="_blank">Launch</a>
+            <div class="flex flex-col lg:flex-row-reverse lg:my-8 gap-10">
+               <div class="lg:w-1/2">
+                  <h3 class="text-xl mb-4 uppercase">Entertain Me</h3>
+                  <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores molestiae impedit nisi? Repudiandae, expedita blanditiis corrupti, consectetur iure sed earum voluptates velit dolor totam, delectus voluptatum commodi ad asperiores!</p>
+                  <ul class="list-disc mt-4 mb-4 italic">
+                     <li class="inline-block">REACT - </li>
+                     <li class="inline-block">CSS - </li>
+                     <li class="inline-block">HTML - </li>
+                     <li class="inline-block">Javascript - </li>
+                     <li class="inline-block">MongoDB</li></ul>
+                  <div class="flex justify-center ">
+                     <a class="border-2 border-slate-400 dark:border-slate-600 px-4 py-2 text-center rounded-lg bg-gray-50 w-40 text-lg dark:text-white dark:bg-darkBlue1 mr-8 hover:border-accentCyan hover:bg-gray-100 dark:hover:bg-darkBlue3 dark:hover:border-accentCyan inline-block"> View Code</a>
+                     <a class="border-2 border-slate-400 dark:border-slate-600 px-4 py-2 text-center rounded-lg bg-gray-50 w-40 text-lg dark:text-white dark:bg-darkBlue1 hover:border-accentCyan hover:bg-gray-100 dark:hover:bg-darkBlue3 dark:hover:border-accentCyan inline-block">Launch Live</a>
+                  </div>
+               </div>
+               <div class="lg:w-1/2 ">   
+                  <div class="relative launch inline-block" >
+                     <img src="images/project1.png" alt="" class="filter dark:grayscale-[50%]">
+                     <div class="absolute flex justify-center items-center top-0 left-0 w-full h-full bg-slate-900 opacity-0 transition-all hover:opacity-70">
+                        <a href="https://entertain-me-website.netlify.app/" class="border border-white py-1 px-3 text-white" target="_blank">Launch</a>
+                     </div>
+                  </div>
                </div>
             </div>
+
             <!-- Item 2  -->
-            <div class="relative launch">
-               <img src="images/project2.png" alt="" class="filter dark:grayscale-[50%]">
-               <div class="absolute flex justify-center items-center top-0 left-0 w-full h-full bg-slate-900 opacity-0 transition-all hover:opacity-70">
-                  <a href="https://meow-street-journal.up.railway.app/" class="border border-white py-1 px-3 text-white" target="_blank">Launch</a>
-                  <!-- <a href="https://meow-street-journal.netlify.app/" class="border border-white py-1 px-3 text-white" target="_blank">Launch</a> -->
+            <div class="flex flex-col lg:flex-row lg:my-8 gap-10">
+               <div class="lg:w-1/2">
+                  <h3 class="text-xl mb-4 uppercase">Meow Street Journal</h3>
+                  <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores molestiae impedit nisi? Repudiandae, expedita blanditiis corrupti, consectetur iure sed earum voluptates velit dolor totam, delectus voluptatum commodi ad asperiores!</p>
+                  <ul class="list-disc mt-4 mb-4 italic">
+                     <li class="inline-block">REACT - </li>
+                     <li class="inline-block">CSS - </li>
+                     <li class="inline-block">HTML - </li>
+                     <li class="inline-block">Javascript - </li>
+                     <li class="inline-block">MongoDB</li></ul>
+                  <div class="flex justify-center ">
+                     <a class="border-2 border-slate-400 dark:border-slate-600 px-4 py-2 text-center rounded-lg bg-gray-50 w-40 text-lg dark:text-white dark:bg-darkBlue1 mr-8 hover:border-accentCyan hover:bg-gray-100 dark:hover:bg-darkBlue3 dark:hover:border-accentCyan inline-block"> View Code</a>
+                     <a class="border-2 border-slate-400 dark:border-slate-600 px-4 py-2 text-center rounded-lg bg-gray-50 w-40 text-lg dark:text-white dark:bg-darkBlue1 hover:border-accentCyan hover:bg-gray-100 dark:hover:bg-darkBlue3 dark:hover:border-accentCyan inline-block">Launch Live</a>
+                  </div>
+               </div>
+               <div class="lg:w-1/2 ">   
+                  <div class="relative launch">
+                     <img src="images/project2.png" alt="" class="filter dark:grayscale-[50%]">
+                     <div class="absolute flex justify-center items-center top-0 left-0 w-full h-full bg-slate-900 opacity-0 transition-all hover:opacity-70">
+                        <a href="https://meow-street-journal.up.railway.app/" class="border border-white py-1 px-3 text-white" target="_blank">Launch</a>
+                        <!-- <a href="https://meow-street-journal.netlify.app/" class="border border-white py-1 px-3 text-white" target="_blank">Launch</a> -->
+                     </div>
+                  </div>
                </div>
             </div>
+
+            <!-- Item 3  -->
+            <div class="flex flex-col lg:flex-row-reverse lg:my-8 gap-10">
+               <div class="lg:w-1/2">
+                  <h3 class="text-xl mb-4 uppercase">Tenzies</h3>
+                  <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores molestiae impedit nisi? Repudiandae, expedita blanditiis corrupti, consectetur iure sed earum voluptates velit dolor totam, delectus voluptatum commodi ad asperiores!</p>
+                  <ul class="list-disc mt-4 mb-4 italic">
+                     <li class="inline-block">REACT - </li>
+                     <li class="inline-block">CSS - </li>
+                     <li class="inline-block">HTML - </li>
+                     <li class="inline-block">Javascript - </li>
+                     <li class="inline-block">MongoDB</li></ul>
+                  <div class="flex justify-center ">
+                     <a class="border-2 border-slate-400 dark:border-slate-600 px-4 py-2 text-center rounded-lg bg-gray-50 w-40 text-lg dark:text-white dark:bg-darkBlue1 mr-8 hover:border-accentCyan hover:bg-gray-100 dark:hover:bg-darkBlue3 dark:hover:border-accentCyan inline-block"> View Code</a>
+                     <a class="border-2 border-slate-400 dark:border-slate-600 px-4 py-2 text-center rounded-lg bg-gray-50 w-40 text-lg dark:text-white dark:bg-darkBlue1 hover:border-accentCyan hover:bg-gray-100 dark:hover:bg-darkBlue3 dark:hover:border-accentCyan inline-block">Launch Live</a>
+                  </div>
+               </div>
+               <div class="lg:w-1/2 ">   
+                  <div class="relative launch">
+                     <img src="images/project3.png" alt="" class="filter dark:grayscale-[50%]">
+                     <div class="absolute flex justify-center items-center top-0 left-0 w-full h-full bg-slate-900 opacity-0 transition-all hover:opacity-70">
+                        <a href="https://tenzies-game-timo.netlify.app" class="border border-white py-1 px-3 text-white" target="_blank">Launch</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            
+             <!-- Item 4  -->
+             <div class="flex flex-col lg:flex-row lg:my-8 gap-10">
+               <div class="lg:w-1/2">
+                  <h3 class="text-xl mb-4 uppercase">Tenzies</h3>
+                  <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores molestiae impedit nisi? Repudiandae, expedita blanditiis corrupti, consectetur iure sed earum voluptates velit dolor totam, delectus voluptatum commodi ad asperiores!</p>
+                  <ul class="list-disc mt-4 mb-4 italic">
+                     <li class="inline-block">REACT - </li>
+                     <li class="inline-block">CSS - </li>
+                     <li class="inline-block">HTML - </li>
+                     <li class="inline-block">Javascript - </li>
+                     <li class="inline-block">MongoDB</li></ul>
+                  <div class="flex justify-center ">
+                     <a class="border-2 border-slate-400 dark:border-slate-600 px-4 py-2 text-center rounded-lg bg-gray-50 w-40 text-lg dark:text-white dark:bg-darkBlue1 mr-8 hover:border-accentCyan hover:bg-gray-100 dark:hover:bg-darkBlue3 dark:hover:border-accentCyan inline-block"> View Code</a>
+                     <a class="border-2 border-slate-400 dark:border-slate-600 px-4 py-2 text-center rounded-lg bg-gray-50 w-40 text-lg dark:text-white dark:bg-darkBlue1 hover:border-accentCyan hover:bg-gray-100 dark:hover:bg-darkBlue3 dark:hover:border-accentCyan inline-block">Launch Live</a>
+                  </div>
+               </div>
+               <div class="lg:w-1/2 ">   
+                  <div class="relative launch">
+                     <img src="images/project4.png" alt="" class="filter dark:grayscale-[50%]">
+                     <div class="absolute flex justify-center items-center top-0 left-0 w-full h-full bg-slate-900 opacity-0 transition-all hover:opacity-70">
+                        <a href="https://assembly-hangman-game.netlify.app" class="border border-white py-1 px-3 text-white" target="_blank">Launch</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            
          </div>
 
       </div>
@@ -131,16 +224,18 @@
       <div class="container mx-auto px-20">
          <div class="flex flex-col-reverse sm:flex-row justify-center items-center md:space-x-10 space-x-0 pt-16 pb-16 gap-10">
             <div class="flex w-1/2 flex-col space-y-10 justify-center items-center">
-               <a href="https://github.com/timosi-dev" target="_blank" class="border-2 border-slate-400 dark:border-slate-600 hover:border-accentCyan px-4 py-2 text-center rounded-lg bg-gray-50 w-56 hover:bg-gray-100 text-xl dark:text-white dark:bg-darkBlue1 dark:hover:bg-darkBlue3 dark:hover:border-accentCyan">GitHub</a>
-               <a href="http://www.linkedin.com/in/timosi" target="_blank" class="border-2 border-slate-400 dark:border-slate-600 hover:border-accentCyan px-4 py-2 text-center rounded-lg bg-gray-50 w-56 hover:bg-gray-100 text-xl dark:text-white dark:bg-darkBlue1 dark:hover:bg-darkBlue3 dark:hover:border-accentCyan">Linked-In</a>
-               <a href="https://www.imdb.com/name/nm8426760/?ref_=fn_al_nm_1" target="_blank" class="border-2 border-slate-400 dark:border-slate-600 hover:border-accentCyan px-4 py-2 text-center rounded-lg bg-gray-50 w-56 hover:bg-gray-100 text-xl dark:text-white dark:bg-darkBlue1 dark:hover:bg-darkBlue3 dark:hover:border-accentCyan">IMDB</a>
+               <a href="https://github.com/timlidz" target="_blank" class="border-2 border-slate-400 dark:border-slate-600 hover:border-accentCyan px-4 py-2 text-center rounded-lg bg-gray-50 w-56 hover:bg-gray-100 text-xl dark:text-white dark:bg-darkBlue1 dark:hover:bg-darkBlue3 dark:hover:border-accentCyan">GitHub</a>
+               <a href="http://www.linkedin.com/in/timlidz" target="_blank" class="border-2 border-slate-400 dark:border-slate-600 hover:border-accentCyan px-4 py-2 text-center rounded-lg bg-gray-50 w-56 hover:bg-gray-100 text-xl dark:text-white dark:bg-darkBlue1 dark:hover:bg-darkBlue3 dark:hover:border-accentCyan">Linked-In</a>
+
             </div>
 
             <div class="flex w-1/2 flex-col space-y-10 justify-center items-center">
                <div class="flex flex-col space-y-4">
                   <p class="text-xl">Email:</p>
-                  <a href='mailt&#111;&#58;t&#37;69m&#111;&#50;%330&#55;5&#37;&#52;0gmail&#46;com' class="border-2 border-slate-400 dark:border-slate-600 px-4 py-2 text-center rounded-lg bg-gray-50 w-56 text-lg dark:text-white dark:bg-darkBlue1" target="_blank">
-                     tim&#111;&#50;3&#48;75&#64;&#103;mail&#46;com</a>
+                  <span class="border-2 border-slate-400 dark:border-slate-600 px-4 py-2 text-center rounded-lg bg-gray-50 w-56 text-lg dark:text-white dark:bg-darkBlue1">
+                     timm.lidz@gmail<!--.example-->.com
+                  </span>
+                  
                </div>
 
                <a href="resume/timo-dev-cv.pdf" target="_blank" class="border-2 border-slate-400 dark:border-slate-600 hover:border-accentCyan px-4 py-2 text-center rounded-lg bg-gray-50 w-56 hover:bg-gray-100 text-xl dark:text-white dark:bg-darkBlue1 dark:hover:bg-darkBlue3 dark:hover:border-accentCyan">CV</a>
@@ -154,11 +249,18 @@
 
 
    <footer class="bg-gray-50 dark:bg-darkBlue1 text-white">
-      <div class=" container mx-auto px-6 pt-7 text-center h-24">
+      <div class=" container mx-auto px-20  text-center h-24 flex flex-row justify-between ">
          
          <div class="flex justify-center md:justify-between items-center">
-            <div class="text-gray-400 dark:text-gray-500 font-itim font-normal text-2xl">Timo Sikharulidze</div>
-            
+            <div class="text-gray-400 dark:text-gray-500 font-itim font-normal text-2xl">Tim Lidz</div>
+         </div>
+
+         <div class="flex justify-center md:justify-between items-center gap-3">
+            <a href="https://www.linkedin.com/in/timlidz/"><i class="fa-brands fa-linkedin text-darkBlue1 dark:text-gray-200 fa-xl hover:text-accentCyan dark:hover:text-accentCyan"></i></a>
+            <a href="https://github.com/timlidz"><i class="fa-brands fa-github text-darkBlue1 dark:text-gray-200 fa-xl hover:text-accentCyan dark:hover:text-accentCyan"></i></a>
+            <a href="#"><i class="fa-regular fa-envelope text-darkBlue1 dark:text-gray-200 fa-xl hover:text-accentCyan dark:hover:text-accentCyan"></i></a>
+
+         </div>
       </div>
    </footer>
 
