@@ -26,7 +26,7 @@
          }
    </script>
    <script src="https://kit.fontawesome.com/72b4c1a072.js" crossorigin="anonymous"></script>
-   <script src="./js/script.js" defer></script>
+   <script src="./js/vfx-script.js" defer></script>
    <link rel="stylesheet" href="css/style.css">
    <title>Tim Lidz</title>
 
@@ -79,40 +79,57 @@
    </header>
 
 
-
-   <!-- Socials/contact ME Section  -->
-   <section id="contactme" class="bg-white dark:bg-darkBlue">
-      <div class="container mx-auto px-20">
-         <div class="flex flex-col-reverse sm:flex-row justify-center items-center md:space-x-10 space-x-0 pt-16 pb-16 gap-10">
-            <div class="flex w-1/2 flex-col space-y-10 justify-center items-center">
-               <a href="https://github.com/timlidz" target="_blank" class="border-2 border-slate-400 dark:border-slate-600 hover:border-accentCyan px-4 py-2 text-center rounded-lg bg-gray-50 w-56 hover:bg-gray-100 text-xl dark:text-white dark:bg-darkBlue1 dark:hover:bg-darkBlue3 dark:hover:border-accentCyan">GitHub</a>
-               <a href="http://www.linkedin.com/in/timlidz" target="_blank" class="border-2 border-slate-400 dark:border-slate-600 hover:border-accentCyan px-4 py-2 text-center rounded-lg bg-gray-50 w-56 hover:bg-gray-100 text-xl dark:text-white dark:bg-darkBlue1 dark:hover:bg-darkBlue3 dark:hover:border-accentCyan">Linked-In</a>
-               <a href="https://bsky.app/profile/timlidz.bsky.social" target="_blank" class="border-2 border-slate-400 dark:border-slate-600 hover:border-accentCyan px-4 py-2 text-center rounded-lg bg-gray-50 w-56 hover:bg-gray-100 text-xl dark:text-white dark:bg-darkBlue1 dark:hover:bg-darkBlue3 dark:hover:border-accentCyan">Photography</a>
-               <a href="https://www.imdb.com/name/nm8426760/?ref_=fn_al_nm_1" target="_blank" class="border-2 border-slate-400 dark:border-slate-600 hover:border-accentCyan px-4 py-2 text-center rounded-lg bg-gray-50 w-56 hover:bg-gray-100 text-xl dark:text-white dark:bg-darkBlue1 dark:hover:bg-darkBlue3 dark:hover:border-accentCyan">IMDB - VFX</a>
+<!-- About Me Section  -->
+<section id="hero" class="">
+   <!-- Hero container  -->
+   <div class="container mx-auto px-10 text-center flex flex-col justify-center items-center md:items-start pt-40 md:pt-32 pb-10 md:flex-row space-x-8 lg:space-x-10 md:gap-10 ">
+      <!-- Image + Intro -->
+      <div class="flex flex-col justify-center items-center w-full md:w-1/3 lg:w-full md:mt-14 lg:mt-10">
+         <div class="flex flex-row md:flex-col justify-center items-center gap-10">
+            <div class="bg-[url('../images/photo1.jpg')] dark:bg-[url('../images/photo1-bw.jpg')] w-20 h-20 lg:w-40 lg:h-40 bg-cover bg-center rounded-full my-10 md:mb-0">
             </div>
-
-            <div class="flex w-1/2 flex-col space-y-10 justify-center items-center">
-               <div class="flex flex-col space-y-4">
-                  <p class="text-xl">Email:</p>
-                  <span class="border-2 border-slate-400 dark:border-slate-600 px-4 py-2 text-center rounded-lg bg-gray-50 w-56 text-lg dark:text-white dark:bg-darkBlue1">
-                     timm.lidz@gmail<!--.example-->.com
-                  </span>
-                  <!-- <a href='mailt&#111;&#58;t&#37;69m&#111;&#50;%330&#55;5&#37;&#52;0gmail&#46;com' class="border-2 border-slate-400 dark:border-slate-600 px-4 py-2 text-center rounded-lg bg-gray-50 w-56 text-lg dark:text-white dark:bg-darkBlue1" target="_blank">
-                     tim&#111;&#50;3&#48;75&#64;&#103;mail&#46;com</a> -->
-                  
-               </div>
-
-               <a href="resume/timo-dev-cv.pdf" target="_blank" class="border-2 border-slate-400 dark:border-slate-600 hover:border-accentCyan px-4 py-2 text-center rounded-lg bg-gray-50 w-56 hover:bg-gray-100 text-xl dark:text-white dark:bg-darkBlue1 dark:hover:bg-darkBlue3 dark:hover:border-accentCyan">CV</a>
+            <div>
+               <p class="italic text-sm">Munich, Germany</p>
+               <a class="uppercase" href='mail&#116;o&#58;tim&#109;%&#50;Elidz&#64;&#103;m%&#54;1il&#37;2Ecom'>t&#105;mm&#46;lidz&#64;gmail&#46;com</a>
             </div>
+         </div> 
+
+         <div class="pt-4 pb-8 px-8 md:px-0">
+            <p class="text-xl pb-6">Thanks for stopping by!</p>
+            <p>I'm currently open to new opportunities and collaborations. If you'd like to work together or have any inquiries, feel free to get in touch. </p>
             
-         
          </div>
       </div>
-   </section>
+
+      <!-- Form -->
+      <div class="w-full mt-4 mb-32 pr-6">
+         <p class="text-2xl pb-4 md:pb-8 md:pt-4">I'd love to hear from you! </p>
+         <form name="contact" method="POST" data-netlify="true" class="bg-gray-50 dark:bg-darkBlue2 py-10 rounded-xl ">
+            <div class="flex flex-col items-start w-3/4 mx-auto mb-4"> 
+              <label class="text-sm text-slate-600 dark:text-slate-300" for="name">Name: </label>
+               <input class="w-full py-1 px-2 rounded-md bg-gray-50 dark:bg-darkBlue2 border border-slate-400 placeholder:text-slate-300 dark:placeholder:text-slate-600" type="text" name="name" id="name" placeholder="Your name here..."/>
+            </div>
+            <div class="flex flex-col items-start w-3/4 mx-auto mb-4">
+              <label class="text-sm text-slate-600 dark:text-slate-300" for="email">Email: </label>
+               <input class="w-full py-1 px-2 rounded-md bg-gray-50 dark:bg-darkBlue2 border border-slate-400 placeholder:text-slate-300 dark:placeholder:text-slate-600" type="email" name="email" id="email" placeholder="Your email here..."/>          
+            </div>
+            <div class="flex flex-col items-start w-3/4 mx-auto mb-4">
+              <label class="text-sm text-slate-600 dark:text-slate-300" for="message">Message: </label>
+               <textarea class="w-full py-1 px-2 pb-10 rounded-md bg-gray-50 dark:bg-darkBlue2 border border-slate-400 placeholder:text-slate-300 dark:placeholder:text-slate-600" name="message" id="message" placeholder="message..."></textarea>
+            </div>
+            <div>
+              <button class=" border-2 border-slate-400 dark:border-slate-600 hover:border-accentCyan px-20 py-2 mt-6 text-center rounded-lg bg-gray-50 w-30 md:w-38 hover:bg-gray-100 text-xl dark:text-white dark:bg-darkBlue1 dark:hover:bg-darkBlue3 dark:hover:border-accentCyan" type="submit">Send</button>
+            </div>
+          </form>
+
+      </div>
+
+   </div>
+</section>
 
 
 
-   <footer class="bg-gray-50 dark:bg-darkBlue1 text-white">
+   <footer class="bg-gray-50 dark:bg-darkBlue1 text-white fixed bottom-0 right-0 left-0 z-10">
       <div class=" container mx-auto px-20  text-center h-24 flex flex-row justify-between ">
          
          <div class="flex justify-center md:justify-between items-center">
