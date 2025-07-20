@@ -106,20 +106,21 @@
          <p class="text-2xl pb-4 md:pb-8 md:pt-4">I'd love to hear from you! </p>
 
          <form name="contact" method="POST" data-netlify="true" class="bg-gray-50 dark:bg-darkBlue2 py-10 rounded-xl" onSubmit="submit"
-         data-netlify-honeypot="bot-field" action="/success-contact/">
+         data-netlify-honeypot="bot-field" action="success.html">
             <input class="hidden" name="bot-field"> 
 
             <div class="flex flex-col items-start w-3/4 mx-auto mb-4"> 
               <label class="text-sm text-slate-600 dark:text-slate-300" for="name">Name: </label>
-               <input class="w-full py-1 px-2 rounded-md bg-gray-50 dark:bg-darkBlue2 border border-slate-400 placeholder:text-slate-300 dark:placeholder:text-slate-600" type="text" name="name" id="name" placeholder="Your name here..."/>
+               <input class="w-full py-1 px-2 rounded-md bg-gray-50 dark:bg-darkBlue2 border border-slate-400 placeholder:text-slate-300 dark:placeholder:text-slate-600" type="text" name="name" id="name" placeholder="Your name here..." required/>
             </div>
             <div class="flex flex-col items-start w-3/4 mx-auto mb-4">
               <label class="text-sm text-slate-600 dark:text-slate-300" for="email">Email: </label>
-               <input class="w-full py-1 px-2 rounded-md bg-gray-50 dark:bg-darkBlue2 border border-slate-400 placeholder:text-slate-300 dark:placeholder:text-slate-600" type="email" name="email" id="email" placeholder="Your email here..."/>          
+               <input class="w-full py-1 px-2 rounded-md bg-gray-50 dark:bg-darkBlue2 border border-slate-400 placeholder:text-slate-300 dark:placeholder:text-slate-600" type="email" name="email" id="email" placeholder="Your email here..." required 
+               />          
             </div>
             <div class="flex flex-col items-start w-3/4 mx-auto mb-4">
               <label class="text-sm text-slate-600 dark:text-slate-300" for="message">Message: </label>
-               <textarea class="w-full py-1 px-2 pb-10 rounded-md bg-gray-50 dark:bg-darkBlue2 border border-slate-400 placeholder:text-slate-300 dark:placeholder:text-slate-600" name="message" id="message" placeholder="message..."></textarea>
+               <textarea class="w-full py-1 px-2 pb-10 rounded-md bg-gray-50 dark:bg-darkBlue2 border border-slate-400 placeholder:text-slate-300 dark:placeholder:text-slate-600" name="message" id="message" placeholder="message..." required></textarea>
             </div>
             <div>
               <button class=" border-2 border-slate-400 dark:border-slate-600 hover:border-accentCyan px-20 py-2 mt-6 text-center rounded-lg bg-gray-50 w-30 md:w-38 hover:bg-gray-100 text-xl dark:text-white dark:bg-darkBlue1 dark:hover:bg-darkBlue3 dark:hover:border-accentCyan" type="submit">Send</button>
